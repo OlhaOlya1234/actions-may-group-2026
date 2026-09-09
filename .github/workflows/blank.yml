@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v7
-        name: Checkout code
+        name: Checkout repository
 
       - name: List files and folders
         run: ls -la
@@ -32,7 +32,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-       - name: create folder
+      - name: create folder
         run: mkdir hello
       
       - name: List files and folders
